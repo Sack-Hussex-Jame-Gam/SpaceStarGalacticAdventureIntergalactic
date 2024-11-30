@@ -38,6 +38,9 @@ var timeRunning = 0
 func _process(delta: float) -> void:
 	timeRunning += delta
 	$Control/ProgressBar.value = timeRunning / runtime *100
+	
+	if timeRunning > runtime:
+		$FinalScore.show()
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_left"):

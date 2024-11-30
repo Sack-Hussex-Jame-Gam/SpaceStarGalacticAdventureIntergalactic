@@ -149,4 +149,3 @@ position = Vector2(638, 355)
 scale = Vector2(19.5234, 9.63281)
 sprite_frames = SubResource("SpriteFrames_icyqi")
 script = ExtResource("4_vulsh")
-frames = 7
