@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://dih2vao3ckgpg"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_626ru"]
+[ext_resource type="PackedScene" uid="uid://bvu0yrv0ecbat" path="res://mixamo_base.glb" id="1_vlpku"]
+[ext_resource type="Script" path="res://animatetest.gd" id="2_vv3dc"]
+[ext_resource type="Texture2D" uid="uid://defvniby712ly" path="res://Assets/mars.png" id="4_yvcq8"]
+[ext_resource type="Texture2D" uid="uid://s8ijgq4g3yfy" path="res://Assets/redsky.jpg" id="5_4y7jv"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_626ru")
+
+[node name="personA" parent="." instance=ExtResource("1_vlpku")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.06644, 0.352514, -1.3687)
+script = ExtResource("2_vv3dc")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.793332, 0.608789, 0, -0.608789, 0.793332, -3.35698, -0.00507832, -1.54131)
+texture = ExtResource("4_yvcq8")
+
+[node name="sky" type="Sprite3D" parent="."]
+transform = Transform3D(13.275, 0, 0, 0, 13.275, 0, 0, 0, 13.275, -0.223728, 10.8388, -12.7242)
+texture = ExtResource("5_4y7jv")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9246, 3.10327, 3.17422)
+light_color = Color(1, 0.658824, 0.352941, 1)
+light_energy = 12.495
+
+[node name="personB" parent="." instance=ExtResource("1_vlpku")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.218194, 0.705029, -1.58359)
+script = ExtResource("2_vv3dc")
+
+[node name="Camera1" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26857, 1.70809, -0.462928)
+
+[node name="Camera2" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.250284, 1.7096, -0.329969)
+
+[node name="Camera3" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.03611, 1.70809, 1.28144)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 521.0
+offset_bottom = 45.0
+
+[node name="ProgressBar" type="ProgressBar" parent="Control"]
+layout_mode = 2
+offset_right = 563.0
+offset_bottom = 27.0
+value = 25.25
