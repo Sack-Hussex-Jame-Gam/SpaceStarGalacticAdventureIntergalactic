@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Level4/cameraControl.gd" id="1_626ru"]
 [ext_resource type="PackedScene" uid="uid://bvu0yrv0ecbat" path="res://Level4/mixamo_base.glb" id="1_vlpku"]
 [ext_resource type="Script" path="res://Level4/animatetest.gd" id="2_vv3dc"]
-[ext_resource type="Texture2D" uid="uid://defvniby712ly" path="res://Assets/mars.png" id="4_yvcq8"]
-[ext_resource type="Texture2D" uid="uid://s8ijgq4g3yfy" path="res://Assets/redsky.jpg" id="5_4y7jv"]
+[ext_resource type="Texture2D" uid="uid://c4cbfdynoyqbp" path="res://Level4/IMG_0550.png" id="4_aodao"]
+[ext_resource type="Texture2D" uid="uid://bcwe0d7fmpmj7" path="res://Level4/marssky.png" id="5_nit7p"]
 [ext_resource type="PackedScene" uid="uid://cwm8d3n20ssy1" path="res://GUIs/FinalScore.tscn" id="6_8m220"]
 
 [node name="Node3D" type="Node3D"]
@@ -16,17 +16,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.06644, 0.352514, -1.3687)
 script = ExtResource("2_vv3dc")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.793332, 0.608789, 0, -0.608789, 0.793332, -3.35698, -0.00507832, -1.54131)
-texture = ExtResource("4_yvcq8")
+transform = Transform3D(1.185, 0, 0, 0, 0.248742, 1.1586, 0, -1.1586, 0.248742, -0.787529, 0.464298, -2.00729)
+texture = ExtResource("4_aodao")
 
 [node name="sky" type="Sprite3D" parent="."]
-transform = Transform3D(13.275, 0, 0, 0, 13.275, 0, 0, 0, 13.275, -0.223728, 10.8388, -12.7242)
-texture = ExtResource("5_4y7jv")
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 1.05569, 18.9902, -17.9045)
+texture = ExtResource("5_nit7p")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9246, 3.10327, 3.17422)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.843194, 4.19978, 0.633737)
 light_color = Color(1, 0.658824, 0.352941, 1)
 light_energy = 12.495
+shadow_enabled = true
 
 [node name="personB" parent="." instance=ExtResource("1_vlpku")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.218194, 0.705029, -1.58359)
