@@ -11,6 +11,5 @@ config_version=5
 [application]
 
 config/name="SpaceStarGalacticAdventureIntergalactic"
-run/main_scene="res://animate.tscn"
+run/main_scene="res://MainMenus/Intro.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"

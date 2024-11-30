@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bvu0yrv0ecbat"
-path="res://.godot/imported/mixamo_base.glb-36ac66da114290a7ebc69f55f1ed6e74.scn"
+path="res://.godot/imported/mixamo_base.glb-77fe498708188a8cecb34f54d746a850.scn"
 
 [deps]
 
-source_file="res://mixamo_base.glb"
-dest_files=["res://.godot/imported/mixamo_base.glb-36ac66da114290a7ebc69f55f1ed6e74.scn"]
+source_file="res://Level4/mixamo_base.glb"
+dest_files=["res://.godot/imported/mixamo_base.glb-77fe498708188a8cecb34f54d746a850.scn"]
 
 [params]
 

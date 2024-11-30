@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dih2vao3ckgpg"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_626ru"]
-[ext_resource type="PackedScene" uid="uid://bvu0yrv0ecbat" path="res://mixamo_base.glb" id="1_vlpku"]
-[ext_resource type="Script" path="res://animatetest.gd" id="2_vv3dc"]
+[ext_resource type="Script" path="res://Level4/main.gd" id="1_626ru"]
+[ext_resource type="PackedScene" uid="uid://bvu0yrv0ecbat" path="res://Level4/mixamo_base.glb" id="1_vlpku"]
+[ext_resource type="Script" path="res://Level4/animatetest.gd" id="2_vv3dc"]
 [ext_resource type="Texture2D" uid="uid://defvniby712ly" path="res://Assets/mars.png" id="4_yvcq8"]
 [ext_resource type="Texture2D" uid="uid://s8ijgq4g3yfy" path="res://Assets/redsky.jpg" id="5_4y7jv"]
 
