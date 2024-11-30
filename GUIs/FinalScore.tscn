@@ -1,7 +1,9 @@
-[gd_scene load_steps=68 format=3 uid="uid://cwm8d3n20ssy1"]
+[gd_scene load_steps=70 format=3 uid="uid://cwm8d3n20ssy1"]
 
+[ext_resource type="Script" path="res://GUIs/NextSceneButton.gd" id="1_bi63r"]
+[ext_resource type="Script" path="res://GUIs/FinalScore.gd" id="1_kjmk0"]
 [ext_resource type="Texture2D" uid="uid://uhfdd14m5lor" path="res://GUIs/confetti.png" id="1_ut0ri"]
-[ext_resource type="Script" path="res://MainMenus/LoopAnimation.gd" id="2_bgjys"]
+[ext_resource type="Script" path="res://Utils/LoopAnimation.gd" id="2_bgjys"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k3v4d"]
 atlas = ExtResource("1_ut0ri")
@@ -460,12 +462,14 @@ animations = [{
 }]
 
 [node name="FinalScore" type="Control"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_kjmk0")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -475,10 +479,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer"]
-custom_minimum_size = Vector2(161.06, 23.905)
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
-text = "final score: like 7"
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "click me for next level"
+script = ExtResource("1_bi63r")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(161.06, 50.6)
+layout_mode = 2
+text = "final score: like 7
+Rating: E"
 
 [node name="Confetti" type="AnimatedSprite2D" parent="."]
 position = Vector2(248, 527)

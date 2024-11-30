@@ -15,4 +15,4 @@ func _process(delta: float) -> void:
 
 	if timePassed >  5:
 		# Change scene to Level 4
-		get_tree().change_scene_to_file("res://Level4/Level4.tscn")
+		get_tree().change_scene_to_file("res://Level1/level1.tscn")

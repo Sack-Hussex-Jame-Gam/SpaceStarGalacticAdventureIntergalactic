@@ -1,10 +1,9 @@
-extends Node3D
+extends "res://scripts/levelController.gd"
 
 var cameraEvents = [[1,2],[2,4],[3,2],[1,2],[3,5],[1,1],[2,2]]
 var runtime = 0
 
 func run_camera():
-
 	print("Running camera")
 	for event in cameraEvents:
 		print("Going to camera: ", event[0], " for ", event[1], " seconds")
@@ -23,25 +22,23 @@ func run_camera():
 
 	print("Camera run finished")
 
-
-	# Based on a present movement of
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	for event in cameraEvents:
 		runtime += event[1]
 	print("Runtime: ", runtime)
+	setLevelLengthSeconds(runtime)
 	run_camera()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+#Overrides other process script in level Controller!
 var timeRunning = 0
 func _process(delta: float) -> void:
 	timeRunning += delta
 	$Control/ProgressBar.value = timeRunning / runtime *100
-	
 	if timeRunning > runtime:
-		$FinalScore.show()
-
+		showFinalScore()
+	
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_left"):
 		$Camera1.set_current(true)

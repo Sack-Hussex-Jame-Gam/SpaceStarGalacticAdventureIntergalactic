@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://86o8sl33yv6s"]
+
+[ext_resource type="Script" path="res://scripts/levelController.gd" id="1_jrr1y"]
+[ext_resource type="PackedScene" uid="uid://cwm8d3n20ssy1" path="res://GUIs/FinalScore.tscn" id="2_2bx52"]
+
+[node name="Level6" type="Node3D"]
+script = ExtResource("1_jrr1y")
+levelLengthSeconds = 5
+nextScene = "res://Level7/Level7.tscn"
+
+[node name="FinalScore" parent="." instance=ExtResource("2_2bx52")]
