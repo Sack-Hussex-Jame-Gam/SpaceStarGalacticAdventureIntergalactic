@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlphwmlplfhia"
-path="res://.godot/imported/knight.png-e6c90432381c63e9c40851d423d1a8f9.ctex"
+uid="uid://ci8bgl343dgll"
+path="res://.godot/imported/coin.png-9afd7e44f01e6ae9a5f4a57d09d3af1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/brackeys_platformer_assets/sprites/knight.png"
-dest_files=["res://.godot/imported/knight.png-e6c90432381c63e9c40851d423d1a8f9.ctex"]
+source_file="res://assets2/brackeys_platformer_assets/sprites/coin.png"
+dest_files=["res://.godot/imported/coin.png-9afd7e44f01e6ae9a5f4a57d09d3af1d.ctex"]
 
 [params]
 

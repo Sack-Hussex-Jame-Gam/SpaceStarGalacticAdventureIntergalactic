@@ -3,13 +3,13 @@
 [ext_resource type="PackedScene" uid="uid://dw0xpmwohpst2" path="res://scenes/platform.tscn" id="1_8hc48"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_37nxo"]
 [ext_resource type="PackedScene" uid="uid://ci5odsk4svvoi" path="res://scenes/player.tscn" id="1_glsdp"]
-[ext_resource type="Texture2D" uid="uid://h5g6omucx8l3" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_jyilf"]
+[ext_resource type="Texture2D" uid="uid://h5g6omucx8l3" path="res://assets2/brackeys_platformer_assets/sprites/world_tileset.png" id="2_jyilf"]
 [ext_resource type="PackedScene" uid="uid://bx2jeonabaj61" path="res://scenes/coin.tscn" id="4_7nnoe"]
 [ext_resource type="PackedScene" uid="uid://cuc5ou7ncbh0h" path="res://scenes/killzone.tscn" id="5_0h4ke"]
 [ext_resource type="PackedScene" uid="uid://bfofc6ij7f8nj" path="res://scenes/slime.tscn" id="6_fihfs"]
-[ext_resource type="FontFile" uid="uid://d4ay58h55bsdf" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="7_awpyf"]
-[ext_resource type="FontFile" uid="uid://bt26m3uhonl7d" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="9_c1whs"]
-[ext_resource type="Texture2D" uid="uid://nmvh65bp6o3a" path="res://assets/brackeys_platformer_assets/sprites/backgroundResize.png" id="11_mmv1j"]
+[ext_resource type="FontFile" uid="uid://d4ay58h55bsdf" path="res://assets2/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="7_awpyf"]
+[ext_resource type="FontFile" uid="uid://bt26m3uhonl7d" path="res://assets2/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="9_c1whs"]
+[ext_resource type="Texture2D" uid="uid://nmvh65bp6o3a" path="res://assets2/brackeys_platformer_assets/sprites/backgroundResize.png" id="11_mmv1j"]
 
 [sub_resource type="Animation" id="Animation_2l5ve"]
 length = 0.001
