@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dvg7agttiil2v"
+path="res://.godot/imported/all power to the engine.wav-05a30ce0f1d7bb53a1435e79e99a8c1e.sample"
+
+[deps]
+
+source_file="res://game jam audio/all power to the engine.wav"
+dest_files=["res://.godot/imported/all power to the engine.wav-05a30ce0f1d7bb53a1435e79e99a8c1e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

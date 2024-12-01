@@ -1,10 +1,11 @@
-[gd_scene load_steps=23 format=3 uid="uid://cwkkd7slld0ut"]
+[gd_scene load_steps=24 format=3 uid="uid://cwkkd7slld0ut"]
 
 [ext_resource type="Texture2D" uid="uid://bfb56v3hvjnxu" path="res://Assets/Space-Star-Galactic-Adventure-30-11-2024.png" id="1_0h08v"]
 [ext_resource type="Script" path="res://MainMenus/IntroCore.gd" id="1_yk12s"]
 [ext_resource type="Script" path="res://MainMenus/Entrance.gd" id="2_v6iqp"]
 [ext_resource type="Texture2D" uid="uid://xk1ngv7bcujc" path="res://exp2.png" id="3_s333x"]
 [ext_resource type="Script" path="res://Utils/LoopAnimation.gd" id="4_vulsh"]
+[ext_resource type="Texture2D" uid="uid://deu6c80u6qkkh" path="res://Assets/miku menu.png" id="6_ixmmh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rwrlb"]
 atlas = ExtResource("3_s333x")
@@ -150,3 +151,9 @@ scale = Vector2(19.5234, 9.63281)
 sprite_frames = SubResource("SpriteFrames_icyqi")
 script = ExtResource("4_vulsh")
 frames = 7
+
+[node name="MikuMenu" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(578.5, 265)
+scale = Vector2(0.487712, 0.467073)
+texture = ExtResource("6_ixmmh")
