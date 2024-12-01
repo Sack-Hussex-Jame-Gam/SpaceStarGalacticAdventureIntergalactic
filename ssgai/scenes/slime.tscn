@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://bfofc6ij7f8nj"]
+
+[ext_resource type="Script" path="res://scripts/slime.gd" id="1_g4rm4"]
+[ext_resource type="Texture2D" uid="uid://b647tfj0tnnjp" path="res://assets/brackeys_platformer_assets/sprites/slime_purple.png" id="1_sooga"]
+[ext_resource type="PackedScene" uid="uid://cuc5ou7ncbh0h" path="res://scenes/killzone.tscn" id="3_4py23"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3mka"]
+atlas = ExtResource("1_sooga")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mx4yx"]
+atlas = ExtResource("1_sooga")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aoacn"]
+atlas = ExtResource("1_sooga")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d677n"]
+atlas = ExtResource("1_sooga")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ovstc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3mka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mx4yx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aoacn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d677n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6f565"]
+size = Vector2(10, 12)
+
+[node name="slime" type="Node2D"]
+script = ExtResource("1_g4rm4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ovstc")
+autoplay = "default"
+frame_progress = 0.482988
+
+[node name="killzone" parent="AnimatedSprite2D" instance=ExtResource("3_4py23")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/killzone"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_6f565")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(0, 5)
+target_position = Vector2(10, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(0, 5)
+target_position = Vector2(-8, 0)
