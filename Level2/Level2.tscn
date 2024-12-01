@@ -1,9 +1,9 @@
 [gd_scene load_steps=29 format=3 uid="uid://ct4e2o5kflkti"]
 
-[ext_resource type="Script" path="res://scripts/levelController.gd" id="1_q8x4y"]
 [ext_resource type="PackedScene" uid="uid://cwm8d3n20ssy1" path="res://GUIs/FinalScore.tscn" id="2_8lxpr"]
 [ext_resource type="Texture2D" uid="uid://dsydr3e052ugi" path="res://Level2/ship.png" id="3_xjetq"]
 [ext_resource type="Script" path="res://Utils/LoopAnimation3D.gd" id="4_fqr4l"]
+[ext_resource type="PackedScene" uid="uid://rilsyga55lx2" path="res://Level2/control_panel.tscn" id="4_o1x8n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1hbut"]
 atlas = ExtResource("3_xjetq")
@@ -175,11 +175,7 @@ animations = [{
 }]
 
 [node name="Level2" type="Node3D"]
-script = ExtResource("1_q8x4y")
-levelLengthSeconds = 25
-nextScene = "res://Level3/Level3.tscn"
-
-[node name="FinalScore" parent="." instance=ExtResource("2_8lxpr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000844061, -0.00411761, 0.00110412)
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tclow")
@@ -189,83 +185,6 @@ frames = 22
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.53103)
 
-[node name="ControlPanel" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="ControlPanel" parent="." instance=ExtResource("4_o1x8n")]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="ControlPanel"]
-custom_minimum_size = Vector2(282.155, 27.305)
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -0.5
-offset_right = 0.5
-grow_horizontal = 2
-text = "TEXT TEXT IO FUCKING LOVE TEXT"
-
-[node name="GridContainer" type="GridContainer" parent="ControlPanel"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
-offset_top = -40.0
-offset_right = 20.0
-grow_horizontal = 2
-grow_vertical = 0
-columns = 3
-
-[node name="PanelContainer" type="PanelContainer" parent="ControlPanel/GridContainer"]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="ControlPanel/GridContainer/PanelContainer"]
-custom_minimum_size = Vector2(154.62, 66.41)
-layout_mode = 2
-color = Color(0.57462, 0.94705, 1, 1)
-
-[node name="PanelContainer2" type="PanelContainer" parent="ControlPanel/GridContainer"]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="ControlPanel/GridContainer/PanelContainer2"]
-custom_minimum_size = Vector2(184.74, 61.315)
-layout_mode = 2
-color = Color(0.57462, 0.94705, 1, 1)
-
-[node name="PanelContainer3" type="PanelContainer" parent="ControlPanel/GridContainer"]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="ControlPanel/GridContainer/PanelContainer3"]
-custom_minimum_size = Vector2(82.95, 61.315)
-layout_mode = 2
-color = Color(0.57462, 0.94705, 1, 1)
-
-[node name="PanelContainer4" type="PanelContainer" parent="ControlPanel/GridContainer"]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="ControlPanel/GridContainer/PanelContainer4"]
-custom_minimum_size = Vector2(141.285, 61.315)
-layout_mode = 2
-color = Color(0.57462, 0.94705, 1, 1)
-
-[node name="PanelContainer5" type="PanelContainer" parent="ControlPanel/GridContainer"]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="ControlPanel/GridContainer/PanelContainer5"]
-custom_minimum_size = Vector2(161.165, 66.41)
-layout_mode = 2
-color = Color(0.57462, 0.94705, 1, 1)
-
-[node name="PanelContainer6" type="PanelContainer" parent="ControlPanel/GridContainer"]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="ControlPanel/GridContainer/PanelContainer6"]
-custom_minimum_size = Vector2(87.235, 66.41)
-layout_mode = 2
-color = Color(0.57462, 0.94705, 1, 1)
+[node name="FinalScore" parent="." instance=ExtResource("2_8lxpr")]

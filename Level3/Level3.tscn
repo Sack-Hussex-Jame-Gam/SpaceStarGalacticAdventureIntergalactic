@@ -5,6 +5,6 @@
 
 [node name="Level3" type="Node3D"]
 script = ExtResource("1_r6xa3")
-levelLengthSeconds = 3
+levelLengthSeconds = 12
 
 [node name="FinalScore" parent="." instance=ExtResource("2_fn2o1")]
