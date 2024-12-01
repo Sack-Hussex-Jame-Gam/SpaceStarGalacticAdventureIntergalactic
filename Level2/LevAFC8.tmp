@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ct4e2o5kflkti"]
+[gd_scene load_steps=10 format=3 uid="uid://ct4e2o5kflkti"]
 
 [ext_resource type="Texture2D" uid="uid://ban0gokg3br8n" path="res://Level2/Assets/IMG_0577.png" id="1_ct4ry"]
 [ext_resource type="PackedScene" uid="uid://cwm8d3n20ssy1" path="res://GUIs/FinalScore.tscn" id="2_8lxpr"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dis4r2v0gky5r" path="res://Level2/Assets/IMG_0579.png" id="3_prhfq"]
 [ext_resource type="Script" path="res://Level2/Rocket.gd" id="4_crxl7"]
 [ext_resource type="PackedScene" uid="uid://rilsyga55lx2" path="res://Level2/control_panel.tscn" id="4_o1x8n"]
+[ext_resource type="Script" path="res://Level2/parallax_background.gd" id="7_cmxem"]
 [ext_resource type="PackedScene" uid="uid://igpr82kq7q78" path="res://background.tscn" id="7_ko0n5"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tclow"]
@@ -29,7 +30,7 @@ animations = [{
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000844061, -0.00411761, 0.00110412)
 
 [node name="Rocket" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-0.00146852, 0.0549804, 0, -0.0549804, -0.00146852, 0, 0, 0, 0.055, -1.84151, -0.00135519, 0.631899)
+transform = Transform3D(-0.00133502, 0.0499822, 0, -0.0499822, -0.00133502, 0, 0, 0, 0.05, 0.000264555, -0.00135519, 0.015043)
 sprite_frames = SubResource("SpriteFrames_tclow")
 script = ExtResource("4_crxl7")
 frames = 3
@@ -42,5 +43,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.53103)
 
 [node name="FinalScore" parent="." instance=ExtResource("2_8lxpr")]
 
-[node name="Sprite3D" parent="." instance=ExtResource("7_ko0n5")]
-transform = Transform3D(0.454, 0, 0, 0, 0.459, 0, 0, 0, 0.645, 0, 0, 0)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("7_cmxem")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite3D" parent="ParallaxBackground/ParallaxLayer" instance=ExtResource("7_ko0n5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000844061, -0.00411761, 0.00110412)
+script = null

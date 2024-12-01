@@ -11,3 +11,7 @@ func _process(delta: float) -> void:
 
 func setNextScene(scene: String) -> void:
 	$CenterContainer/VBoxContainer/Button.setNextScene(scene)
+
+func setFinalScore(score: int) -> void:
+	$CenterContainer/VBoxContainer/RichTextLabel.text = "Final Score: " + str(score)
+	

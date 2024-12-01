@@ -29,7 +29,7 @@ animations = [{
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000844061, -0.00411761, 0.00110412)
 
 [node name="Rocket" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-0.00146852, 0.0549804, 0, -0.0549804, -0.00146852, 0, 0, 0, 0.055, -1.84151, -0.00135519, 0.631899)
+transform = Transform3D(-0.00133502, 0.0499822, 0, -0.0499822, -0.00133502, 0, 0, 0, 0.05, 0.000264555, -0.00135519, 0.015043)
 sprite_frames = SubResource("SpriteFrames_tclow")
 script = ExtResource("4_crxl7")
 frames = 3
@@ -43,4 +43,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.53103)
 [node name="FinalScore" parent="." instance=ExtResource("2_8lxpr")]
 
 [node name="Sprite3D" parent="." instance=ExtResource("7_ko0n5")]
-transform = Transform3D(0.454, 0, 0, 0, 0.459, 0, 0, 0, 0.645, 0, 0, 0)

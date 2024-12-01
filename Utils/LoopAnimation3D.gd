@@ -6,7 +6,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 @export var frames = 10
-	
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 #	Change the frame 20 times a second
@@ -15,7 +15,3 @@ func _process(delta: float) -> void:
 		frame += 1
 	else:
 		frame = 0
-	pass
-	
-	
-	

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://igpr82kq7q78"]
+
+[ext_resource type="Texture2D" uid="uid://sef65epghx17" path="res://Level2/Assets/IMG_0568.png" id="1_ramhr"]
+
+[node name="Sprite3D" type="Sprite3D"]
+texture = ExtResource("1_ramhr")

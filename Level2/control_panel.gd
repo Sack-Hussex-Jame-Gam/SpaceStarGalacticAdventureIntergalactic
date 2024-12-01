@@ -31,21 +31,33 @@ var currentWaitingKeys = []
 
 var instuction = 0
 var instructionsCompleted = 0
-
+var score = 10000
+var totalscore = 0
 func _process(delta: float) -> void:
+	score -= delta * 1000
 	var InstructionLabel = $ColorRect/RichTextLabel
 	if instructionsCompleted < instructions.size() and currentWaitingKeys.is_empty():
 		var newInstruction = instructions[instructionsCompleted]
 		print("New instruction")
+		totalscore += score
+		score = 10000
 		InstructionLabel.text = newInstruction
 		instructionsCompleted += 1
 
 		# Search the text for words in keymappings
 		for key in keymappings:
 			if newInstruction.find(key[0]) != -1:
-				currentWaitingKeys = key[1]
+				currentWaitingKeys = key[1].duplicate()
+				print("Set waiting keys to " + str(currentWaitingKeys))
 				print("Found key " + str(key[0]) + " in " + newInstruction)
 				break
+
+	elif instructionsCompleted >= instructions.size():
+		InstructionLabel.text = "!!!!"
+		get_parent().get_node("FinalScore").show()
+		get_parent().get_node("FinalScore").setNextScene("res://Level4/level4.tscn")
+		get_parent().get_node("FinalScore").setFinalScore(totalscore)
+
 
 
 # Check for keys in combinations, if correct, remove from list
