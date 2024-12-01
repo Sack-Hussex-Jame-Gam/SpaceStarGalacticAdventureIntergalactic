@@ -241,6 +241,7 @@ layer_1/tile_data = PackedInt32Array(196612, 458753, 0, 196613, 458753, 0, 32768
 
 [node name="Player" parent="." instance=ExtResource("1_glsdp")]
 z_index = 5
+texture_filter = 1
 position = Vector2(80, 37)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]

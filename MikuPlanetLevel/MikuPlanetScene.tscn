@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjx0uy2tji53k"]
+
+[ext_resource type="PackedScene" uid="uid://brf43v81diyir" path="res://scenes/game.tscn" id="1_6a5mf"]
+[ext_resource type="PackedScene" uid="uid://bocea7wf5fivu" path="res://scenes/music.tscn" id="2_ppqu3"]
+
+[node name="MikuPlanetScene" type="Node2D"]
+
+[node name="level_2" parent="." instance=ExtResource("1_6a5mf")]
+
+[node name="music" parent="." instance=ExtResource("2_ppqu3")]
