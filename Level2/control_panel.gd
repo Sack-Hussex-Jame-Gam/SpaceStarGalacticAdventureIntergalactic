@@ -1,5 +1,13 @@
 extends Control
 
+@onready var alignFins = $"../alignFins"
+@onready var allPowerEngine = $"../all power engine"
+@onready var startBoosters = $"../start boosters"
+@onready var refuel = $"../refuel"
+@onready var powerShields = $"../power shields"
+@onready var morePowerBoosters =  $"../more power boosters"
+
+
 var instructions = [
 	"Align the fins!",
 	"Start the boosters",
@@ -8,14 +16,14 @@ var instructions = [
 	"Power up the shields!",
 	"More power to the boosters!",
 	"Refuel!",
-	"Give the engine all she's got!",
-	"Tweak the fins positions",
-	"Quick, refuel!",
-	"Full power to the engine!",
-	"Use the boosters",
-	"Put the fins in position",
-	"Charge up the shields",
-	"Boost with the boosters"
+	"All power to the engine",
+	"Align the fins!",
+	"Refuel!",
+	"All power to the engine!",
+	"More power to the boosters!",
+	"Align the fins!",
+	"Power up the shields!",
+	"More power to the boosters!"
 ]
 
 var keymappings = [
@@ -38,6 +46,18 @@ func _process(delta: float) -> void:
 	var InstructionLabel = $ColorRect/RichTextLabel
 	if instructionsCompleted < instructions.size() and currentWaitingKeys.is_empty():
 		var newInstruction = instructions[instructionsCompleted]
+		if instructionsCompleted == 0 or instructionsCompleted == 3 or instructionsCompleted == 8 or instructionsCompleted == 12:
+			alignFins.play()
+		if instructionsCompleted == 1: 
+			startBoosters.play()
+		if instructionsCompleted == 2 or instructionsCompleted == 7 or instructionsCompleted == 10:
+			allPowerEngine.play()
+		if instructionsCompleted == 4 or instructionsCompleted == 13:
+			powerShields.play()
+		if instructionsCompleted == 5 or  instructionsCompleted == 11:
+			morePowerBoosters.play()
+		if instructionsCompleted == 6  or instructionsCompleted == 9:
+			refuel.play()
 		print("New instruction")
 		totalscore += score
 		score = 10000

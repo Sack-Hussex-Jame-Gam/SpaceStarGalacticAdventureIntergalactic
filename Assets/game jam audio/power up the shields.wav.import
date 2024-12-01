@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bpxf512vken2l"
+path="res://.godot/imported/power up the shields.wav-27512bbdd4b0ac2e73655fc917b10596.sample"
+
+[deps]
+
+source_file="res://Assets/game jam audio/power up the shields.wav"
+dest_files=["res://.godot/imported/power up the shields.wav-27512bbdd4b0ac2e73655fc917b10596.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

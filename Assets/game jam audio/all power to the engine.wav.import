@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://hrht2carlpuf"
+path="res://.godot/imported/all power to the engine.wav-e8d20aebf1ad0672ab027c0c0ae8bbf1.sample"
+
+[deps]
+
+source_file="res://Assets/game jam audio/all power to the engine.wav"
+dest_files=["res://.godot/imported/all power to the engine.wav-e8d20aebf1ad0672ab027c0c0ae8bbf1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

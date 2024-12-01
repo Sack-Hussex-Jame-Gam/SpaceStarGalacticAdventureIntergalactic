@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b3up0u0dm8ls0"
+path="res://.godot/imported/refuel.wav-a9151cee44f56f88a2dadb9679a93683.sample"
+
+[deps]
+
+source_file="res://game jam audio/refuel.wav"
+dest_files=["res://.godot/imported/refuel.wav-a9151cee44f56f88a2dadb9679a93683.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

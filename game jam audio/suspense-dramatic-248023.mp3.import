@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7w5dlhpm2rff"
+path="res://.godot/imported/suspense-dramatic-248023.mp3-1358a2b715f3170fba27f14bbb7e1e2e.mp3str"
+
+[deps]
+
+source_file="res://game jam audio/suspense-dramatic-248023.mp3"
+dest_files=["res://.godot/imported/suspense-dramatic-248023.mp3-1358a2b715f3170fba27f14bbb7e1e2e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
