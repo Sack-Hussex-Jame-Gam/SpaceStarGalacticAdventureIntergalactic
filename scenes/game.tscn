@@ -232,6 +232,7 @@ unique_name_in_owner = true
 script = ExtResource("1_37nxo")
 
 [node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
 tile_set = SubResource("TileSet_3tgjv")
 format = 2
 layer_0/name = "Background"
@@ -256,24 +257,31 @@ shape = SubResource("WorldBoundaryShape2D_mlyp4")
 [node name="Coins" type="Node" parent="."]
 
 [node name="coin" parent="Coins" instance=ExtResource("4_7nnoe")]
+texture_filter = 1
 position = Vector2(-19, 79)
 
 [node name="coin2" parent="Coins" instance=ExtResource("4_7nnoe")]
+texture_filter = 1
 position = Vector2(-144, 13)
 
 [node name="coin3" parent="Coins" instance=ExtResource("4_7nnoe")]
+texture_filter = 1
 position = Vector2(158, 108)
 
 [node name="coin4" parent="Coins" instance=ExtResource("4_7nnoe")]
+texture_filter = 1
 position = Vector2(-297, 91)
 
 [node name="coin5" parent="Coins" instance=ExtResource("4_7nnoe")]
+texture_filter = 1
 position = Vector2(79, 13)
 
 [node name="coin6" parent="Coins" instance=ExtResource("4_7nnoe")]
+texture_filter = 1
 position = Vector2(351, -2)
 
 [node name="coin7" parent="Coins" instance=ExtResource("4_7nnoe")]
+texture_filter = 1
 position = Vector2(158, 108)
 
 [node name="Enemies" type="Node" parent="."]

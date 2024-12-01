@@ -75,7 +75,7 @@ func _process(delta: float) -> void:
 	elif instructionsCompleted >= instructions.size():
 		InstructionLabel.text = "!!!!"
 		get_parent().get_node("FinalScore").show()
-		get_parent().get_node("FinalScore").setNextScene("res://Level4/level4.tscn")
+		get_parent().get_node("FinalScore").setNextScene("res://scenes/game.tscn")
 		get_parent().get_node("FinalScore").setFinalScore(totalscore)
 
 
